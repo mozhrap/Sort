@@ -1,0 +1,2 @@
+C:\Users\Criceto\IdeaProjects\Task5\input.txt
+C:\Users\Criceto\IdeaProjects\Task5\output.txt
