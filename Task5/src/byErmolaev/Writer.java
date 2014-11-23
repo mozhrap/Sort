@@ -23,11 +23,11 @@ public class Writer {
         pw.close();
     }
 
-    public static synchronized void write(List<Integer> firstAl, int n) {
+    public static synchronized void write(List<Integer> al, int n) {
 
         pw.print("[");
 
-        for (int num : firstAl) {
+        for (int num : al) {
             pw.print(num + " ");
         }
         pw.print("]");
