@@ -1,6 +1,7 @@
 package byErmolaev;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
 import java.util.concurrent.Semaphore;
 
@@ -25,9 +26,11 @@ public class Sorter implements Runnable {
     }
 
     public synchronized void sort(List<Integer> al) {
-        for (int num : al) {
+        Iterator<Integer> alit = al.iterator();
+        while (alit.hasNext()) {
 //        for (int i = 0; i < al.size(); i++) {
 //           int num= al.get(i);
+           int num=alit.next();
             Config.writeln("There is: " + num);
             if (num % 3 == 0) {
                 firstAl.add(num);
